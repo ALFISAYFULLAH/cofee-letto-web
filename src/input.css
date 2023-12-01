@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Titillium+Web:ital,wght@0,200;0,300;0,400;1,200&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components{
+    h2 {
+        font-size: 28px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+    h4 {
+        font-size: 16px;
+    }
+    h5 {
+        font-size: 15px;
+    }
+    h6 {
+        font-size: 13px;
+    }
+    p {
+        font-size: 12px;
+    }
+}
+
+@layer components {
+    .page-first {
+        @apply bg-gradient-to-tr from-page-first via-page-first to-page-second relative z-0 overflow-hidden pb-28 px-[10%] pt-8 flex flex-wrap lg:flex-nowrap lg:flex-row-reverse gap-8
+    }
+
+    .text-container-page-first {
+        @apply w-full lg:w-1/2 h-[50vh] lg:h-[80vh] flex flex-col justify-center items-center text-white
+    }
+
+    .text-main {
+        @apply text-center lg:text-start text-big-desktop mb-4 md:text-biggest-desktop font-pacifico
+    }
+
+    .second-page {
+        @apply bg-page-second p-[5%] pt-20 pb-28 rounded-t-big relative z-10 overflow-hidden -mt-20 flex flex-col md:flex-row gap-16 md:gap-4
+    }
+
+    .second-page-card {
+        @apply w-36 h-56 text-white
+    }
+
+    .text-second-card {
+        @apply font-pacifico text-center text-xl
+    }
+
+    .text-price-card {
+        @apply font-semibold text-center
+    }
+
+    .img-full {
+        @apply h-full w-full object-cover
+    }
+
+    .third-page {
+        @apply bg-white relative z-20 rounded-t-big overflow-hidden -mt-20 pb-28 px-[5%] pt-8 flex flex-wrap md:flex-nowrap md:flex-row-reverse gap-8
+    }
+
+    .fourth-page {
+        @apply bg-gradient-to-t from-primary to-page-first rounded-t-big -mt-20 relative z-30 pb-28 pt-8
+    }
+
+    .fifth-page {
+        @apply bg-white relative z-40 rounded-t-big overflow-hidden -mt-20 pb-28 px-[5%] pt-8 flex flex-wrap md:flex-nowrap gap-8
+    }
+
+    .sixth-page {
+        @apply bg-page-first relative z-50 rounded-t-big overflow-hidden -mt-20 px-[5%] pt-8 flex flex-wrap md:flex-nowrap gap-1
+    }
+
+    .hero-item-1 {
+        @apply w-full md:w-1/2 text-white flex flex-col justify-center md:items-start items-center
+    }
+
+    .hero-item-2 {
+        @apply w-full mt-8 md:mt-0 md:w-1/2 md:max-h-fit flex justify-center items-center
+    }
+}
